@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!-- Syreen Banabilah -->
+	<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<title> Guess The Number </title>
+	</head>
+	<body>
+		<script>
+		function myFunction() {
+			var my_num = 56;
+			var user_num = prompt("Please enter your number");
+
+			while (my_num != user_num) {
+				if (my_num > user_num) {
+					user_num = prompt("Your number is too small, Guess another one please");
+				} else {
+					user_num = prompt("Your number is too large, Guess another one please");
+				}	 	
+			}
+			document.getElementById("demo").innerHTML =
+					"you Got It";
+		}
+		</script>
+		<button onclick="myFunction()">Start Game</button>
+		<p id="demo"></p>
+	</body>
+	</html>
