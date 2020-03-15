@@ -1,0 +1,54 @@
+
+body {
+	background-color: lightyellow;
+}
+
+table {
+    border: 0px !important;
+}
+
+em {
+	font-style: normal;
+	font-variant: small-caps;
+}
+
+.excitement {
+	background-color: #a40087;
+	color: white;
+	
+}
+
+.excitement:hover {
+  background-color: #d400a5;
+}
+
+.subtle {
+	font-size: 0.75em;
+}
+
+p.subtle {
+	font-size: 90%;
+}
+
+#chick {
+  
+  margin-right: 15px;
+  width: 95px;
+  height:126px;
+  float: left;
+}
+
+ol {
+	list-style-position: inside;
+}
+
+/* I learned this step from this link https://stackoverflow.com/questions/34695108/html-ordered-list-ol-add-space-between-number-and-text */
+li::before {
+  content: "";
+  width: 15px;
+  display: inline-block;
+}
+
+footer{
+	text-align: right;
+}
