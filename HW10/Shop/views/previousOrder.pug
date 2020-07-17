@@ -1,0 +1,23 @@
+
+extends layout
+block content
+  div(id="header") 
+  p(id="pic_fornt") Thanks for shopping with us, #{user_name} !
+  br
+  br
+  br
+  br
+  br
+  br
+  div(id="body_orders")
+    p(id="Thank") Thanks for being our Customer
+    br
+    br
+    p Here are your previous orders:
+    ul
+      each current_order, i in all_orders
+        li=  'Order ' + (i+1) + ' : '
+        ul 
+          each item, j in current_order
+            li= item
+    a(href='/') Return to shopping
