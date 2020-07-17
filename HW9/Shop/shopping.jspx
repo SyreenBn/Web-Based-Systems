@@ -1,0 +1,46 @@
+<html
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:jsp="http://java.sun.com/JSP/Page"
+  xmlns:c="http://java.sun.com/jsp/jstl/core">
+  <jsp:directive.page contentType="text/html" />
+  <jsp:output
+    omit-xml-declaration="yes"
+    doctype-root-element="html"
+    doctype-system="about:legacy-compat" />
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>
+      HelloCounter.jspx
+    </title>
+  </head>
+  <body>
+    <p>
+     Thanks for shopping with us,
+       ${user_name}!
+    </p>
+
+    <form action="add_to_cart" method="get">
+      <label>Enter the item you would like to buy</label><br/>
+      <input type="text" name="item"/><br/>
+      <input type="submit" value="Add to cart!"/><br/>
+    </form>
+    <p>
+      Current Order:
+
+      <ul>
+      <c:forEach var="i" items="${items}">
+
+          <li> ${i} </li><br />
+      </c:forEach>
+      </ul>
+    </p>
+
+    <form action="place_order" method="get">
+      <input type="submit" value="Place my Order"/><br/>
+    </form>
+    <a href="display_order">Show my Previous Orders!</a>
+
+
+  </body>
+</html>

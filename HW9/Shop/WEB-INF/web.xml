@@ -1,0 +1,37 @@
+<web-app
+  xmlns="http://java.sun.com/xml/ns/j2ee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+  version="2.4">
+
+  <display-name>Web Shop</display-name>
+  <description>
+    Simple visit-counter app.
+  </description>
+  <servlet>
+    <servlet-name>controller</servlet-name>
+    <servlet-class>ShopController</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>shop</servlet-name>
+    <jsp-file>/shopping.jspx</jsp-file>
+  </servlet>
+
+  <servlet>
+    <servlet-name>history</servlet-name>
+    <jsp-file>/history.jspx</jsp-file>
+  </servlet>
+
+  <servlet>
+    <servlet-name>login</servlet-name>
+    <jsp-file>/login.jspx</jsp-file>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>controller</servlet-name>
+    <url-pattern>/*</url-pattern>
+  </servlet-mapping>
+  <session-config>
+    <session-timeout>1</session-timeout>
+  </session-config>
+</web-app>

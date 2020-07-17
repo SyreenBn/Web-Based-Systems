@@ -1,0 +1,40 @@
+<html
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:jsp="http://java.sun.com/JSP/Page"
+  xmlns:c="http://java.sun.com/jsp/jstl/core">
+  <jsp:directive.page contentType="text/html" />
+  <jsp:output
+    omit-xml-declaration="yes"
+    doctype-root-element="html"
+    doctype-system="about:legacy-compat" />
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>
+      history.jspx
+    </title>
+  </head>
+  <body>
+    <p>
+     Thanks for shopping with us,
+       ${user_name}!
+    </p>
+    <c:set var="count" value="0" scope="page" />
+    <p>
+      Here is Your Previous Orders:
+      <ul>
+            <c:forEach var="order" items="${all_orders}">
+            <c:set var="count" value="${count + 1}" scope="page"/>
+              <li> order ${count}
+          <ul>
+          <c:forEach var="j" items="${order}">
+            <li> ${j} </li>
+          </c:forEach>
+        </ul>
+            </li>
+        </c:forEach>
+      </ul>
+    </p>
+    <a href="continue_shopping"> Return to Shopping!</a>
+  </body>
+</html>
