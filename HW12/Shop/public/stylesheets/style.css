@@ -1,0 +1,121 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: gray;
+}
+#body_orders{
+  border-style:ridge;
+  border-width: 1px;
+  height: 500px;
+  width: 280px;
+  padding: 80px 30px 80px 30px;
+  position: absolute;
+  top: 60px;
+  right: 60px;
+
+}
+#body_shop{
+  border-style:ridge;
+  border-width: 1px;
+  height: 500px;
+  padding: 80px 30px 80px 30px;
+
+  position: absolute;
+  top: 60px;
+  right: 60px;
+
+}
+ul li::before{
+  padding-left: 50px;
+
+  margin-left: -100px;
+  margin-right: 10px;
+
+}
+#pic_fornt{
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-weight: bold;
+  color: balck;
+  font-size: 5em;
+  width: 1000px;
+  padding-left: 60px;
+  display: inline-block;
+}
+#header {
+    background-image: url('header.jpg');
+    background-repeat: no-repeat;
+    width: 1000px;
+    height: 700px;
+    letter-spacing: 1px;
+    opacity: 0.5;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 5em;
+    padding: 10px 30px 10px 10px;
+    display: inline-block;
+    float: left;
+}
+
+#end_login {
+  border-style:ridge;
+  padding:  10px 20px 10px 40px;
+  padding-bottom: 40px;
+  width: 300px;
+  display: inline-block;
+  margin-left: 35%;
+  margin-right:35%;
+}
+
+#warn{
+  color:red;
+}
+
+button {
+  -webkit-appearance:  none;
+  width:  280px;
+  min-width:  70px;
+  /*border-radius:  24px; */
+  text-align:  center;
+  padding:  10px 20px;
+  margin-top:  5px;
+  background-color: #DB7093;
+  color:  #fff;
+  font-size:  14px;
+  margin-left:  auto;
+  font-weight:  bold;
+  border:  none;
+  transition:  all .3s ease;
+  outline: 0;
+}
+#Thank{
+  width:  270px;
+  text-align:  center;
+  padding:  10px 10px 10px 0px;
+  background-color: #DB7093;
+  color:  #fff;
+  font-size:  14px;
+  font-weight:  bold;
+  margin:  auto;
+  margin-right: auto;
+  position: absolute;
+}
+
+input {
+  font-size:  16px;
+  padding:  20px 0px;
+  height:  36px;
+  border:  none;
+  border-bottom:  none;
+  background:  #e2e2e2;
+  width:  280px;
+  box-sizing:  border-box;
+  transition:  all .3s linear;
+  color:  #000;
+  font-weight:  400;
+  -webkit-appearance:  none;
+}

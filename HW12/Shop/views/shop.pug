@@ -1,0 +1,32 @@
+extends layout
+block content
+  div(id="header") 
+  p(id="pic_fornt") Thanks for shopping with us, #{user_name} !
+  br
+  br
+  br
+  br
+  br
+  br
+  div(id="body_shop")
+    form(method='POST' action='/add_to_cart' id="shop_form")
+      label(for='item') Enter the item you would like to buy
+      br
+      br
+      p(id="warn") #{message}
+      input(type='text' id='item' name='item')
+      br
+      button(type='submit') Add to cart
+    br
+    hr
+    p Current items in cart:
+    ul
+      each ite, k in cart
+        li= ite
+    form(method='POST' action='/place_order')
+      br
+      p(id="warn") #{order_message}
+      button(type='submit') Place Order
+    br 
+    hr
+    a(href='/display_orders') Show my previous orders!
