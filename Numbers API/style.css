@@ -1,0 +1,119 @@
+body {
+  background-image: url('background.png');
+}
+
+h1{
+	text-align:center!important;
+	margin-top:3rem!important;
+	color: #2D4A64;
+	font-weight: bold;
+}
+
+.topper {
+	margin: auto;
+	width: 50%;
+	padding: 10px;
+	color: #a8815f;
+		
+	/*font-family: "cursive",Brush Script MT, Brush Script Std; */
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	text-align: center;
+	
+}
+
+.enjoy {
+	margin: auto;
+	width: 50%;
+	padding: 10px;
+	color: #581845;
+		
+	font-family: "cursive",Brush Script MT, Brush Script Std; 
+	font-style: normal;
+	font-weight: normal;
+	font-size: 17px;
+	text-align: center;
+	
+}
+
+select {
+	display:block;
+	margin: 0 auto;
+	width: 400px;
+	height: 40px;
+	border: 1px solid #999;
+	font-size: 18px;
+	color: #E3A060;
+	background-color: #FAF9F6;
+	border-radius: 5px;
+	box-shadow: 4px 4px #ccc;
+	text-transform: capitalize;
+      }
+	  
+option {
+  color: #E3A060 !important;
+  background: #FDF7F0 !important;
+  text-transform: capitalize;
+  height: 100px;
+}
+
+.container{
+	margin-top:50px !important;
+	display: block;
+	width: 600px;
+	height: auto;
+	margin: 0 auto;
+	background-color: FDF7F0;
+	border: 1px solid green;
+	padding: 10px 10px 20px 10px;
+	box-shadow: 10px 10px 8px #aaaaaa;
+	background-color: #FDF7F0 !important; 	
+}
+
+button {
+  background-color: #DCE98F; 
+  border: none;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  
+  border-radius: 50px;
+  color: #a8815f;
+  
+  align-items: center;
+}
+
+#display{
+	display:block;
+	margin: 0 auto;
+	width: 400px;
+	font-size: 18px;
+	color: #D75307;	
+	text-align: left;
+}
+
+#follow_up{
+	display:block;
+	margin: 0 auto;
+	width: 400px;
+	font-size: 18px;
+	color: #2D4A64;	
+	text-align: left;
+	
+}
+
+.txt{
+	width: 400px;
+	height: 30px;
+	font-size: 18px;
+	color: #E3A060;
+	background-color: #FAF9F6;
+	border-radius: 5px;
+	box-shadow: 4px 4px #ccc;
+	text-transform: capitalize;
+	border: 1px solid #999;
+}
+	
